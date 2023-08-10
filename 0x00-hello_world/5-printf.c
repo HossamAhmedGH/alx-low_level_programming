@@ -3,7 +3,8 @@
 
 /**
  * main - just a code that prints a phrase
- *return 0 if correct, otherwise, something else, idk
+ * , but like a piece of art
+ * Return: 0 if correct, otherwise, something else, idk
  */
 int main(void)
 {
