@@ -4,8 +4,7 @@
  * main - prints alphabet followed by a new line
  * Return: void....
 */
-
-void main(void)
+int main(void)
 {
 	char c;
 
@@ -14,4 +13,5 @@ void main(void)
 		putchar(c);
 	}
 	putchar('\n');
+	return (0);
 }
