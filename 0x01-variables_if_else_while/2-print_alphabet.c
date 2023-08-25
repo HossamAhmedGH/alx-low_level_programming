@@ -1,18 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - prints smth in lowercase,
- * followed by a new  l
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	char ch;
+ * main - prints alphabet followed by a new line
+ * Return: void....
+*/
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+void main(void)
+{
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(ch);
+		putchar(c);
 	}
 	putchar('\n');
-	return (0);
 }
