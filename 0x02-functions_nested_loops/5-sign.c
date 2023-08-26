@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_sign - prints the sign of the int
- * @n: the entr int
- * Return: returns a value depending on the int's sign
- */
+ * print_sign - as the name implies..
+ * Return: 1 if true and 0 if else.
+ * @n: parameter to be measured.
+*/
 
 int print_sign(int n)
 {
@@ -15,12 +15,13 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar('0');
+		_putchar(0 + '0');
 		return (0);
 	}
 	else if (n < 0)
 	{
 		_putchar('-');
 	}
-		return (-1);
+	return (-1);
 }
+
