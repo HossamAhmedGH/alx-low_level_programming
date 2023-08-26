@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints the alphabest
- * Return: 0
- */
+ * print_alphabet - prints the alphabet in lowercase, followed by a new line.
+ * Return: void
+*/
 
 void print_alphabet(void)
 {
-	char c = 'a';
+	char a;
 
-	while (c <= 'z')
+	for (a = 'a'; a <= 'z'; a++)
 	{
-		_putchar(c);
-		c++;
+		_putchar(a);
 	}
 	_putchar('\n');
 }
+
