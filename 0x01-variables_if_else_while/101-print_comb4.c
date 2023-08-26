@@ -20,8 +20,15 @@ int main(void)
 				putchar(x + '0');
 				putchar(y + '0');
 				putchar(z + '0');
-				putchar(',');
-				putchar(' ');
+					if ((x == 7) && (y == 8) && (z == 9))
+						{
+						break;
+						}
+					else
+						{
+						putchar(',');
+						putchar(' ');
+						}
 				z++;
 				}
 				y++;
