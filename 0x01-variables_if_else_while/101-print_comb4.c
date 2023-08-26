@@ -38,6 +38,7 @@ int main(void)
 		y = x + 1;
 		z = y + 1;
 	}
+	putchar('\n');
 	return (0);
 }
 
