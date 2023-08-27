@@ -21,7 +21,7 @@ int main(void)
 		}
 		a++;
 	}
-	printf("The sum of the natural numbers before 1024 is: %d \n", b);
+	printf("%d\n", b);
 	return (0);
 }
 
