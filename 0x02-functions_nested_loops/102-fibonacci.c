@@ -17,7 +17,11 @@ int main(void)
 	while (c < 50)
 	{
 		f = a + b;
-		printf("%lu, ", f);
+		printf("%lu", f);
+		if (c != 49)
+		{
+			printf(", ");
+		}
 		a = b;
 		b = f;
 		c++;
