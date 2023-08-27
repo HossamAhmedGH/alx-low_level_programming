@@ -1,30 +1,27 @@
+#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - computes and prints the sum of all the multiples
- * of 3 or 5 below 1024
- * Return: Always 0 (Success)
- */
+ * main - don't care.
+ * Return: 0.
+ *
+*/
+
 int main(void)
 {
-	unsigned long int sum3, sum5, sum;
-	int i;
+	int a = 0;
+	int b = 0;
 
-	sum3 = 0;
-	sum5 = 0;
-	sum = 0;
-
-	for (i = 0; i < 1024; ++i)
+	while (a < 1024)
 	{
-		if ((i % 3) == 0)
+		if ((a % 3 == 0) || (a % 5 == 0))
 		{
-			sum3 = sum3 + i;
-		} else if ((i % 5) == 0)
-		{
-			sum5 = sum5 + i;
+			b = b + a;
 		}
+		a++;
 	}
-	sum = sum3 + sum5;
-	printf("%lu\n", sum);
+	printf("The sum of the natural numbers before 1024 is: %d \n", b);
 	return (0);
 }
+
