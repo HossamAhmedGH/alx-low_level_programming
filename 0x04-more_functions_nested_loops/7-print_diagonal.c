@@ -1,29 +1,24 @@
 #include "main.h"
 
 /**
- * print_diagonal - again, the name explains it, READ!
- * @n: the number of lines u want ur diagonal line to be drawn on.
- */
+ * print_diagonal - prints a diagonal, duh!
+ * Return: void.
+ * @n: number of times the slash is printed
+*/
 
 void print_diagonal(int n)
 {
-	if (n <= 0)
-	{
-		_putchar('\n');
-	} else
-	{
-		int i, j;
+		int a;
+		int b;
 
-		for (i = 0; i < n; i++)
+		for (a = 1; a <= n; a++)
 		{
-			for (j = 0; j < n; j++)
+			for (b = 1; b < a; b++)
 			{
-				if (j == i)
-					_putchar('\\');
-				else if (j < i)
-					_putchar(' ');
+				_putchar(' ');
 			}
-			_putchar('\n');
+		_putchar('\\');
+		_putchar('\n');
 		}
-	}
 }
+
