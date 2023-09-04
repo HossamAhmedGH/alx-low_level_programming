@@ -3,7 +3,7 @@
 
 /**
  * main - prints squares.
- * Return: void.
+ * Return: always 0.
  */
 
 int main(void)
@@ -34,6 +34,6 @@ int main(void)
 		}
 	}
 	printf("\n");
-	return (1);
+	return (0);
 }
 
