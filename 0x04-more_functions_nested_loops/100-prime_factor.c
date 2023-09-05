@@ -18,7 +18,7 @@ int main(void)
 		x = 2;
 		n = n / 2;
 	}
-	while (a <= sqrt(n))
+	while (a <= n)
 	{
 		if (n % a == 0)
 		{
