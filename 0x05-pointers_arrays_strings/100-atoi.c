@@ -35,16 +35,16 @@ int _atoi(char *s)
 		}
 		if (s[e] >= '0' && s[e] <= '9')
 		{
+			if (c % 2 != 0)
+			{
+			the_integer = (the_integer * 10) - (s[e] - '0');
+			}
+			else
+			{
 			the_integer = (the_integer * 10) + (s[e] - '0');
+			}
 		}
 	}
-	if (c % 2 != 0)
-	{
-		return (-the_integer);
-	}
-	else
-	{
 	return (the_integer);
-	}
 }
 
