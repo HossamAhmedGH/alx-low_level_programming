@@ -10,7 +10,7 @@ int _atoi(char *s)
 {
 	int a; /*length of the string*/
 	int b; /*used to increment until the end of the string*/
-	int c = 1; /*used to determine the sign*/
+	int c = 0; /*used to determine the sign*/
 	int e; /*increments in the exctarction loop*/
 	int the_integer = 0; /*the integer to be saved in the return value*/
 
@@ -18,13 +18,13 @@ int _atoi(char *s)
 	;
 	for (b = 0; b <= a; b++)
 	{
+		if (s[b] == ';')
+		{
+			break;
+		}
 		if (s[b] == '-')
 		{
-			c *= -1;
-		}
-		else if (s[b] == '+')
-		{
-			c *= 1;
+			c++;
 		}
 	} /*now i have the number of positive and negative signs to use with return*/
 	for (e = 0; e <= a; e++)
@@ -38,7 +38,7 @@ int _atoi(char *s)
 			the_integer = (the_integer * 10) + (s[e] - '0');
 		}
 	}
-	if (c == -1)
+	if (c % 2 != 0)
 	{
 		return (-the_integer);
 	}
