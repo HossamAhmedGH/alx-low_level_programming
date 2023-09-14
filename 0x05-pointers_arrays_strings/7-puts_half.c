@@ -15,12 +15,9 @@ void puts_half(char *str)
 	{
 		;
 	}
-	for (b = 0; b <= a; b++)
+	for (b = (a + 1) / 2; b < a; b++)
 	{
-		if (b >= a / 2)
-		{
 		_putchar(str[b]);
-		}
 	}
 	_putchar('\n');
 }
