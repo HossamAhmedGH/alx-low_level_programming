@@ -21,7 +21,7 @@ char *_strncpy(char *dest, char *src, int n)
 	for (b = 0; dest[b] != '\0'; b++)
 	;
 
-	for (c = 0; c < n && c <= a; c++)
+	for (c = 0; c < n; c++)
 	{
 		if (c > a)
 		{
