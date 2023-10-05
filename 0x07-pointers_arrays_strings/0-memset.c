@@ -1,27 +1,21 @@
 #include "main.h"
 
 /**
- * _memset - function fill the first @n bytes of the memory area pointed
- * to by @s with the constant byte @b
- *
- * @n: bytes of the memory area pointed to by @s
- *
- * @s: with the constant byte @b
- *
- * @b: memory area pointer
- *
- * Return: a pointer to the memory area @s
+ * _memset - fills the first n bytes of the memory with b
+ * @s: pointer to the targetted memory area.
+ * @n: the number of slots to be edited.
+ * @b: the constant byte.
+ * Return: s.
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i = 0;
+	unsigned int a;
 
-	while (i < n)
+	for (a = 0; a < n; a++)
 	{
-	s[i] = b;
-	i++;
+		s[a] = b;
 	}
-
 	return (s);
 }
 
