@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -11,7 +12,6 @@ char *_strstr(char *haystack, char *needle)
 {
 	char *a;
 	char *b;
-	char *c;
 
 	if (*needle == '\0')
 	{
@@ -23,29 +23,20 @@ char *_strstr(char *haystack, char *needle)
 		{
 			a = haystack;
 			b = needle;
-			c = haystack;
 			while (*b != '\0')
 			{
-				if (*c == *b)
+				if (*haystack == *b)
 				{
 					b++;
-					if (*c != '\0')
+					if (*haystack != '\0')
 					{
-					c++;
+					haystack++;
 					}
-				}
-				else
-				{
-					break;
 				}
 			}
 			if (*b == '\0')
 			{
 				return (a);
-			}
-			else
-			{
-				b = needle;
 			}
 		}
 	}
