@@ -32,6 +32,8 @@ char *_strstr(char *haystack, char *needle)
 					haystack++;
 					}
 				}
+				else
+				break;
 			}
 			if (*b == '\0')
 			{
